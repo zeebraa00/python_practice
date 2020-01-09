@@ -3,10 +3,10 @@
 import openpyxl
 
 # 기존 엑셀파일 열기 : 파일 객체명 = openpyxl.load_workbook("파일명")
-# 새로운 엑셀파일 생성 : 파일 객체명 = openpyxl.Workbook("파일명")
+# 새로운 엑셀파일 생성 : 파일 객체명 = openpyxl.Workbook()
 # 현재 워크시트 선택 : 워크시트 객체명 = 파일 객체명.active
 # 새로운 엑셀파일 생성 : 파일 객체명 = 파일 객체명['워크시트명']
-# 파일 저장 : 파일 객체명.save()
+# 파일 저장 : 파일 객체명.save("파일명")
 # 파일 닫기 : 파일 객체명.close()
 
 wb=openpyxl.load_workbook("./파일입출력/실습2.xlsx")
